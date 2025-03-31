@@ -1,0 +1,74 @@
+# Child's First App (Animal Sounds) - Implementation Rules
+
+## Code Organization
+
+### Component Structure
+- Animal components should be modular and reusable
+- Each animal type should extend a base Animal component
+- Sound effects should be managed through a central SoundProvider
+- UI elements should be child-friendly with large click/touch targets
+
+### File Naming
+- Use kebab-case for file names (e.g., `animal-card.tsx`)
+- Use PascalCase for component names (e.g., `AnimalCard`)
+- Group related components in subdirectories
+- Keep component files focused on a single responsibility
+
+## Styling Patterns
+
+### General Guidelines
+- Use Tailwind CSS for styling
+- Prefer utility classes over custom CSS
+- Use consistent color variables for theming
+- Ensure high contrast for accessibility
+- Design for touch interfaces with appropriately sized elements
+
+### Animation Guidelines
+- Keep animations subtle and purposeful
+- Avoid rapid movements that might be distracting
+- Use consistent animation timing
+- Ensure animations work on lower-end devices
+
+## Best Practices
+
+### Performance
+- Optimize and preload images for quick display
+- Manage audio resources carefully to prevent memory issues
+- Implement lazy loading for non-critical resources
+- Test performance on target devices regularly
+
+### Accessibility
+- Ensure all interactive elements are keyboard accessible
+- Provide alternative text for all images
+- Maintain proper heading hierarchy
+- Use semantic HTML elements
+- Test with screen readers
+
+### State Management
+- Use React Context for shared state where appropriate
+- Keep state as local as possible
+- Use TypeScript interfaces for all state objects
+- Document state management patterns
+
+## Integration Guidelines
+
+### Unified App Integration
+- Follow the same directory structure patterns as the unified app
+- Use shared components from the unified app where appropriate
+- Maintain consistent styling with the unified app theme
+- Implement shared authentication if required
+- Follow established navigation patterns
+
+## Development Workflow
+
+### Testing
+- Test with the target age group when possible
+- Verify sound playback works consistently across devices
+- Ensure responsive design works on various screen sizes
+- Test touch interactions thoroughly
+
+### Documentation
+- Update memory bank after significant changes
+- Document all animal data structures
+- Maintain clear component documentation
+- Track progress against project goals
